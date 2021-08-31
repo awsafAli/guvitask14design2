@@ -1,0 +1,95 @@
+body {
+    border: 2px solid black;
+    margin: 10px;
+}
+.heading {
+    text-align: center;
+    border: 2px solid black;
+    text-transform: uppercase;
+}
+button,
+input {
+    overflow: visible;
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+}
+.pt50 {
+    padding-top: 50px;
+}
+
+.pb50 {
+    padding-bottom: 50px;
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.container.first {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+h5.sub-heading {
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-weight: 800;
+}
+
+.inner-border {
+    border: 2px solid black;
+    padding: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-8 {
+    margin-left: -8px;
+}
+.pl-7 {
+    padding-left: 7px;
+}
+.pr-1 {
+    padding-right: 1px;
+}
+
+.row.mb-50 > div {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+    .pl-7 {
+        padding-left: 15px;
+    }
+    .pr-1 {
+        margin-right: 10px;
+    }
+
+    .mb-8 {
+        margin-left: 0px;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mb-8 {
+        margin-left: 0px;
+        margin-bottom: 36px;
+    }
+    .inner-border p.mb-8 {
+        margin-bottom: 35px;
+    }
+    .inner-border p.mb-32 {
+        margin-bottom: 35px;
+    }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
