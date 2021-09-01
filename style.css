@@ -10,8 +10,9 @@ body {
 button,
 input {
     overflow: visible;
-    font-family: 'Caveat', cursive;
+    font-family: "Caveat", cursive;
     font-weight: 600;
+    width: 100;
 }
 .pt50 {
     padding-top: 50px;
@@ -60,19 +61,15 @@ h5.sub-heading {
 .row.mb-50 > div {
     margin-bottom: 30px;
 }
+.column {
+    column-gap: 0px;
+}
 
-@media (max-width: 576px) {
-    .pl-7 {
-        padding-left: 15px;
-    }
-    .pr-1 {
-        margin-right: 10px;
-    }
-
-    .mb-8 {
-        margin-left: 0px;
-        margin-bottom: 36px;
-    }
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -86,10 +83,131 @@ h5.sub-heading {
     .inner-border p.mb-32 {
         margin-bottom: 35px;
     }
+
+    .pl-7 {
+        padding-left: 4px;
+        font-size: 20px;
+    }
+
+    p {
+        margin-top: 0;
+        font-size: 21px;
+    }
+    .pl-10 {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pl-7 {
+        padding-left: 15px;
+    }
+    .pr-1 {
+        margin-right: 0px;
+    }
+
+    .mb-8 {
+        margin-left: 0px;
+        margin-bottom: 36px;
+    }
+
+    .pl-7 {
+        padding-left: 4px;
+        font-size: 16px;
+        padding-right: 0px;
+    }
+    .pl-10 {
+        padding-left: 7px;
+
+        padding-right: 0px;
+    }
+
+    p {
+        font-size: 19.5px;
+    }
+    .p-17 {
+        font-size: 18.9px;
+        padding-right: 0px;
+    }
 }
 
 @media (min-width: 992px) {
+    p {
+        margin-top: 0;
+
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1200px) {
+    p {
+        margin-top: 0;
+        font-size: 17px;
+    }
+    .col-sm-5.column.pl-7 {
+        padding: 0px;
+    }
+    .pl-10 {
+        padding-left: 16px;
+        padding-right: 0px;
+    }
+
+    .pt-15 {
+        padding-top: 15px;
+    }
+    .p-17 {
+        font-size: 15px;
+    }
+    .pb-10 {
+        padding-bottom: 16px;
+    }
+    button,
+    input {
+        overflow: visible;
+        font-family: "Caveat", cursive;
+        font-weight: 600;
+        width: 80px;
+    }
+}
+
+@media (min-width: 1400px) {
+    p {
+        margin-top: 0;
+        font-size: 19px;
+    }
+    .col-sm-5.column.pl-7 {
+        padding: 0px;
+    }
+    .pl-10 {
+        padding-left: 10px;
+    }
+
+    .pt-15 {
+        padding-top: 15px;
+    }
+    .p-17 {
+        font-size: 17px;
+    }
+    .pb-10 {
+        padding-bottom: 16px;
+    }
+}
+
+@media (min-width: 1300px) {
+    p {
+        margin-top: 0;
+        font-size: 20px;
+    }
+
+    .pl-10 {
+        padding-left: 8px;
+        padding-right: 0px;
+    }
+    .p-17 {
+        font-size: 19px;
+    }
+    button,
+    input {
+        width: 100px;
+    }
 }
